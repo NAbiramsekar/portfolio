@@ -73,7 +73,7 @@ html, body {
 }
 .btn.dark {
   background: transparent;
-  color:#0b0f12;
+  color: var(--white);
   border: 1px solid var(--muted);
 }
 
