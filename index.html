@@ -1,61 +1,135 @@
-<!-- index.html -->
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>N Abiram Sekar — Portfolio</title>
-  <meta name="description" content="N Abiram Sekar — Frontend / Full-stack Developer Portfolio." />
+  <meta name="description" content="Portfolio of N Abiram Sekar — Frontend / Full-stack Developer skilled in Laravel, React, and JavaScript." />
   <link rel="stylesheet" href="main.css" />
-  <!-- <script src="script.js"></script> -->
-  <script type="module" src="scripts.js"></script>
+  <script defer src="scripts.js"></script>
 </head>
 <body>
-  <div class="container">
-    <header>
-      <div class="hero">
-        <!-- <div class="avatar">NA</div> -->
-        <div>
-          <h1>Abiram Sekar N</h1>
-          <div class="tag">Frontend / Full‑stack Developer — PHP · Laravel · JavaScript · AWS · DevOps · Python · Java</div>
-          
+  <header class="header">
+    <div class="hero">
+      <div class="hero-text">
+        <h1>ABIRAM SEKAR N</h1>
+        <p class="subtitle">Frontend / Full-stack Developer</p>
+        <p class="tagline">PHP · Laravel · React · JavaScript · MySQL · Python</p>
+        <div class="buttons">
+          <a href="assets/Abiram N-Resume.pdf" class="btn" download>Resume</a>
+          <a href="https://github.com/NAbiramsekar" class="btn ghost" target="_blank">GitHub</a>
+          <button id="themeToggle" class="btn dark">Dark / Light</button>
         </div>
+
       </div>
-      <button id="themeToggle" class="btn dark">Dark / Light</button>
+    </div>
+  </header>
 
-      <div class="actions">
-        
-        <a class="btn" href="assets/Abiram_N-Resume.pdf" download>Download Resume</a>
-        <a class="btn ghost" href="https://github.com/NAbiramsekar" target="_blank">GitHub</a>
+  <main class="main-content">
+    <!-- ABOUT -->
+    <section class="card about">
+      <h2>About</h2>
+      <p>
+        I’m an enthusiastic and detail-oriented web developer skilled in building responsive web applications using React, Laravel, and JavaScript. 
+        I love turning complex ideas into smooth, user-friendly digital experiences while learning continuously in modern tech environments.
+      </p>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="card skills">
+      <h2>Technical Skills</h2>
+      <ul>
+        <li><strong>Frontend:</strong> HTML5, CSS3, JavaScript, Bootstrap, React</li>
+        <li><strong>Backend:</strong> PHP, Laravel, MySQL</li>
+        <li><strong>Version Control:</strong> Git, GitHub</li>
+        <li><strong>Developer Tools:</strong> Jira, VS Code, Agile</li>
+        <li><strong>Operating Systems:</strong> Windows, Linux</li>
+        <li><strong>Soft Skills:</strong> Team Collaboration, Problem Solving, Adaptability, Communication</li>
+      </ul>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="card experience">
+      <h2>Experience</h2>
+      <h3>Technology Solution Intern — ULTI Web Technologies | Chennai (Feb 2025 – Present)</h3>
+      <ul>
+        <li>Developed a role-based access management system with Admin, MSSP, MSP, and End User levels.</li>
+        <li>Built UI for user creation, license management, and access control ensuring secure workflows.</li>
+        <li>Designed responsive interfaces using Laravel Blade, JavaScript, and Bootstrap.</li>
+        <li>Integrated RESTful APIs for managing permissions and maintaining consistent data flow.</li>
+        <li>Developed the UI for an AI-driven document analysis platform integrating AI APIs.</li>
+        <li>Implemented authentication flows, file uploads, and dashboards using React and Bootstrap.</li>
+        <li>Followed Agile practices and used Jira for sprint planning and issue tracking.</li>
+        <li>Strong experience with Spec-Driven Development (SDD) using GitHub integrated with AI workflows.</li>
+      </ul>
+    </section>
+
+    <!-- INTERNSHIPS -->
+    <section class="card internships">
+      <h2>Internships</h2>
+      <div class="project">
+        <h3>Swecha AP Internship — Web Development</h3>
+        <p>Contributed to building web applications focusing on responsive frontend design and user interactivity.</p>
       </div>
-    </header>
+      <div class="project">
+        <h3>EduSkills Internship — Data Science (Altair)</h3>
+        <p>Learnt data science fundamentals including data visualization, processing, and model interpretation.</p>
+      </div>
+      <div class="project">
+        <h3>Nextgen — Mini Internship</h3>
+        <p>Completed a mini internship gaining exposure to full-stack development processes and teamwork.</p>
+      </div>
+    </section>
 
-    <main class="grid">
-      <section class="card">
-        <h2>About</h2>
-        <p>I build responsive web apps and clean user interfaces using React, Laravel, and modern JavaScript. Experienced with role-based systems, AI-integrations, and rapid UI prototyping.</p>
-      </section>
+    <!-- PROJECTS -->
+    <section class="card projects">
+      <h2>Projects</h2>
 
-      <section class="card">
-        <h2>Projects</h2>
-        <div class="project">
-          <h3>Touchless Water Dispenser</h3>
-          <p>Hardware + software project using IR sensors and a React dashboard to monitor dispenser activity. Improved hygiene and reduced manual contact.</p>
-          <p><strong>Tech:</strong> Arduino, IR sensors, React</p>
-        </div>
-        <div class="project">
-          <h3>Lung Respiratory Rate Estimation</h3>
-          <p>Used a Spectro-temporal CNN model in MATLAB to estimate respiration rate from video. Focused on signal processing & model accuracy.</p>
-          <p><strong>Tech:</strong> MATLAB, OpenCV, CNN</p>
-        </div>
-      </section>
-    </main>
+      <div class="project">
+        <h3>Touchless Water Dispenser</h3>
+        <p>Designed a contactless water dispensing system using IR sensors integrated with a React dashboard for live monitoring and improved hygiene.</p>
+        <p><strong>Tech:</strong> Arduino, IR Sensors, React</p>
+      </div>
 
-    <footer>
-      &copy; built by N Abiram Sekar
-    </footer>
-  </div>
+      <div class="project">
+        <h3>Lung Respiratory Rate Estimation</h3>
+        <p>Developed a Spectro-Temporal CNN model in MATLAB for respiratory rate estimation from video data, improving model accuracy through image analysis.</p>
+        <p><strong>Tech:</strong> MATLAB, CNN, OpenCV</p>
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS -->
+    <section class="card certs">
+      <h2>Certifications</h2>
+      <ul>
+        <li>Cisco — Python</li>
+        <li>Infosys — Introduction to Artificial Intelligence</li>
+        <li>HackerRank — Problem Solving (Basic)</li>
+        <li>HackerRank — Python</li>
+      </ul>
+    </section>
+
+    <!-- ACHIEVEMENTS -->
+    <section class="card achievements">
+      <h2>Achievements</h2>
+      <ul>
+        <li>Participated in Hackathons demonstrating creative problem-solving skills.</li>
+        <li>Completed a Mini Internship at Nextgen.</li>
+        <li>Participated in National Level Mock Stocks (StockGro).</li>
+      </ul>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="card contact">
+      <h2>Contact</h2>
+      <p><strong>Email:</strong> <a href="mailto:abiramsekar2004@gmail.com">abiramsekar2004@gmail.com</a></p>
+      <p><strong>Phone:</strong> +91 83093 81211</p>
+      <p><strong>LinkedIn:</strong> <a href="http://linkedin.com/in/abiram-sekar-a63a841b8" target="_blank">linkedin.com/in/abiram-sekar-a63a841b8</a></p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 — Designed & Built by <strong>N Abiram Sekar</strong></p>
+  </footer>
 </body>
 </html>
-
-
