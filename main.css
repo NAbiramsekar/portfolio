@@ -1,7 +1,6 @@
 :root {
   --bg: #f6f4ef;
   --surface: #ffffff;
-  --surface-soft: #ece8df;
   --text: #18211f;
   --muted: #66716d;
   --line: #d9d4c8;
@@ -17,7 +16,6 @@
 [data-theme="dark"] {
   --bg: #111412;
   --surface: #1a201d;
-  --surface-soft: #222b27;
   --text: #f3f0e8;
   --muted: #a9b2ad;
   --line: #35403b;
@@ -396,6 +394,12 @@ li + li {
   gap: 28px;
 }
 
+.three-column {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 28px;
+}
+
 .clean-list {
   display: grid;
   gap: 12px;
@@ -411,6 +415,21 @@ li + li {
   background: var(--surface);
   color: var(--muted);
   font-weight: 700;
+}
+
+.clean-list strong {
+  display: block;
+  color: var(--text);
+  font-size: 1.02rem;
+  margin-bottom: 3px;
+}
+
+.clean-list .highlight-tag {
+  display: inline-block;
+  margin-top: 5px;
+  color: var(--accent-dark);
+  font-size: 0.88rem;
+  font-weight: 800;
 }
 
 .contact {
@@ -490,7 +509,8 @@ li + li {
   .section-grid,
   .split,
   .timeline-item,
-  .two-column {
+  .two-column,
+  .three-column {
     grid-template-columns: 1fr;
   }
 
